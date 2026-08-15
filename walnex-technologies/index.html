@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Walnex Technologies - Building the Future with Technology. AI Solutions, Custom Software Development, Cloud Solutions & Digital Transformation.">
+    <meta name="keywords" content="AI, Software Development, Cloud Solutions, Data Analytics, Enterprise Systems, Technology">
+    <title>Walnex Technologies | Building the Future with Technology</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-content">
+                <h2 class="loader-text">WALNEX</h2>
+                <p class="loader-subtitle">Technologies</p>
+            </div>
+        </div>
+        <div class="loading-progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </div>
+
+    <!-- Animated Background Particles -->
+    <canvas id="particlesCanvas" class="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <i class="fas fa-cube"></i>
+                </span>
+                <span class="logo-text">WALNEX</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#technology" class="nav-link">Technology</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content reveal-left">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Innovation Meets Excellence</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Building the Future</span>
+                    <br>with Technology
+                </h1>
+                <p class="hero-description">
+                    Walnex Technologies pioneers cutting-edge AI solutions, custom software development, 
+                    and digital transformation strategies. We empower businesses to thrive in the 
+                    digital age through innovation and technological excellence.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-play-circle"></i>
+                        <span>View Projects</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="150">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="98">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Expert Team</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual reveal-right">
+                <div class="hero-graphic">
+                    <div class="graphic-circle graphic-circle-1"></div>
+                    <div class="graphic-circle graphic-circle-2"></div>
+                    <div class="graphic-circle graphic-circle-3"></div>
+                    <div class="graphic-center">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="floating-card floating-card-1">
+                        <i class="fas fa-robot"></i>
+                        <span>AI Powered</span>
+                    </div>
+                    <div class="floating-card floating-card-2">
+                        <i class="fas fa-cloud"></i>
+                        <span>Cloud Native</span>
+                    </div>
+                    <div class="floating-card floating-card-3">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge">About Us</span>
+                <h2 class="section-title">Transforming Ideas into <span class="gradient-text">Digital Reality</span></h2>
+                <p class="section-subtitle">We are a team of passionate innovators dedicated to pushing the boundaries of technology</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content reveal-left">
+                    <div class="about-text">
+                        <h3>Our Mission</h3>
+                        <p>To empower businesses worldwide with cutting-edge technology solutions that drive growth, efficiency, and innovation. We believe in creating sustainable digital ecosystems that adapt and evolve with our clients' needs.</p>
+                        
+                        <h3>Our Vision</h3>
+                        <p>To be the global leader in AI-driven software solutions, recognized for our commitment to excellence, innovation, and customer success. We envision a future where technology seamlessly integrates with every aspect of business operations.</p>
+                        
+                        <h3>Our Values</h3>
+                        <ul class="values-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span><strong>Innovation First:</strong> Constantly pushing boundaries</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span><strong>Quality Excellence:</strong> Delivering nothing but the best</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span><strong>Customer Centric:</strong> Your success is our success</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span><strong>Integrity:</strong> Transparent and honest partnerships</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-stats reveal-right">
+                    <div class="stats-grid">
+                        <div class="stat-card glass-card">
+                            <i class="fas fa-project-diagram stat-icon"></i>
+                            <div class="stat-info">
+                                <span class="stat-number-animated" data-target="150">0</span>
+                                <span class="stat-plus">+</span>
+                                <span class="stat-desc">Projects Completed</span>
+                            </div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <i class="fas fa-users stat-icon"></i>
+                            <div class="stat-info">
+                                <span class="stat-number-animated" data-target="120">0</span>
+                                <span class="stat-plus">+</span>
+                                <span class="stat-desc">Happy Clients</span>
+                            </div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <i class="fas fa-code-branch stat-icon"></i>
+                            <div class="stat-info">
+                                <span class="stat-number-animated" data-target="500">0</span>
+                                <span class="stat-plus">+</span>
+                                <span class="stat-desc">Code Repositories</span>
+                            </div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <i class="fas fa-award stat-icon"></i>
+                            <div class="stat-info">
+                                <span class="stat-number-animated" data-target="25">0</span>
+                                <span class="stat-plus">+</span>
+                                <span class="stat-desc">Industry Awards</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge">Our Services</span>
+                <h2 class="section-title">Comprehensive <span class="gradient-text">Tech Solutions</span></h2>
+                <p class="section-subtitle">End-to-end technology services tailored to your business needs</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card glass-card reveal-up" data-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Solutions</h3>
+                    <p>Machine learning models, natural language processing, computer vision, and intelligent automation systems that transform your business operations.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-chevron-right"></i> Machine Learning</li>
+                        <li><i class="fas fa-chevron-right"></i> Deep Learning</li>
+                        <li><i class="fas fa-chevron-right"></i> NLP & Chatbots</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card glass-card reveal-up" data-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Custom Software Development</h3>
+                    <p>Tailored software solutions built from the ground up to meet your specific business requirements and workflows.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-chevron-right"></i> Enterprise Applications</li>
+                        <li><i class="fas fa-chevron-right"></i> API Development</li>
+                        <li><i class="fas fa-chevron-right"></i> System Integration</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card glass-card reveal-up" data-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Applications</h3>
+                    <p>Scalable, secure, and high-performance web applications designed for modern businesses and user experiences.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-chevron-right"></i> Progressive Web Apps</li>
+                        <li><i class="fas fa-chevron-right"></i> E-commerce Platforms</li>
+                        <li><i class="fas fa-chevron-right"></i> SaaS Solutions</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card glass-card reveal-up" data-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Cloud migration, infrastructure setup, and management services across AWS, Azure, and Google Cloud Platform.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-chevron-right"></i> Cloud Migration</li>
+                        <li><i class="fas fa-chevron-right"></i> DevOps & CI/CD</li>
+                        <li><i class="fas fa-chevron-right"></i> Serverless Architecture</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card glass-card reveal-up" data-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analytics</h3>
+                    <p>Transform raw data into actionable insights with advanced analytics, visualization, and business intelligence solutions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-chevron-right"></i> Big Data Processing</li>
+                        <li><i class="fas fa-chevron-right"></i> Predictive Analytics</li>
+                        <li><i class="fas fa-chevron-right"></i> Dashboard Development</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card glass-card reveal-up" data-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Enterprise Systems</h3>
+                    <p>Robust enterprise resource planning (ERP), customer relationship management (CRM), and workflow automation systems.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-chevron-right"></i> ERP Implementation</li>
+                        <li><i class="fas fa-chevron-right"></i> CRM Solutions</li>
+                        <li><i class="fas fa-chevron-right"></i> Workflow Automation</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="technology section" id="technology">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge">Technology Stack</span>
+                <h2 class="section-title">Powered by <span class="gradient-text">Cutting-Edge Tech</span></h2>
+                <p class="section-subtitle">We leverage the latest technologies to build robust and scalable solutions</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card glass-card reveal-up" data-delay="100">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-python tech-icon"></i>
+                    </div>
+                    <h4>Python</h4>
+                    <p>AI/ML, Backend Development</p>
+                </div>
+
+                <div class="tech-card glass-card reveal-up" data-delay="200">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-react tech-icon"></i>
+                    </div>
+                    <h4>React</h4>
+                    <p>Frontend Development</p>
+                </div>
+
+                <div class="tech-card glass-card reveal-up" data-delay="300">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-node-js tech-icon"></i>
+                    </div>
+                    <h4>Node.js</h4>
+                    <p>Backend Services</p>
+                </div>
+
+                <div class="tech-card glass-card reveal-up" data-delay="400">
+                    <div class="tech-icon-wrapper">
+                        <i class="fas fa-database tech-icon"></i>
+                    </div>
+                    <h4>PostgreSQL</h4>
+                    <p>Database Management</p>
+                </div>
+
+                <div class="tech-card glass-card reveal-up" data-delay="500">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-docker tech-icon"></i>
+                    </div>
+                    <h4>Docker</h4>
+                    <p>Containerization</p>
+                </div>
+
+                <div class="tech-card glass-card reveal-up" data-delay="600">
+                    <div class="tech-icon-wrapper">
+                        <i class="fas fa-brain tech-icon"></i>
+                    </div>
+                    <h4>TensorFlow</h4>
+                    <p>Machine Learning</p>
+                </div>
+
+                <div class="tech-card glass-card reveal-up" data-delay="700">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-aws tech-icon"></i>
+                    </div>
+                    <h4>AWS</h4>
+                    <p>Cloud Infrastructure</p>
+                </div>
+
+                <div class="tech-card glass-card reveal-up" data-delay="800">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-google tech-icon"></i>
+                    </div>
+                    <h4>GCP</h4>
+                    <p>Cloud Platform</p>
+                </div>
+
+                <div class="tech-card glass-card reveal-up" data-delay="900">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-js tech-icon"></i>
+                    </div>
+                    <h4>JavaScript</h4>
+                    <p>Full-Stack Development</p>
+                </div>
+
+                <div class="tech-card glass-card reveal-up" data-delay="1000">
+                    <div class="tech-icon-wrapper">
+                        <i class="fab fa-git-alt tech-icon"></i>
+                    </div>
+                    <h4>Git</h4>
+                    <p>Version Control</p>
+                </div>
+
+                <div class="tech-card glass-card reveal-up" data-delay="1100">
+                    <div class="tech-icon-wrapper">
+                        <i class="fas fa-server tech-icon"></i>
+                    </div>
+                    <h4>Kubernetes</h4>
+                    <p>Orchestration</p>
+                </div>
+
+                <div class="tech-card glass-card reveal-up" data-delay="1200">
+                    <div class="tech-icon-wrapper">
+                        <i class="fas fa-shield-alt tech-icon"></i>
+                    </div>
+                    <h4>Cybersecurity</h4>
+                    <p>Security Solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us section" id="why-us">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge">Why Choose Walnex</span>
+                <h2 class="section-title">The <span class="gradient-text">Walnex Advantage</span></h2>
+                <p class="section-subtitle">What sets us apart from the competition</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card glass-card reveal-up" data-delay="100">
+                    <div class="why-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security First</h3>
+                    <p>Enterprise-grade security protocols, encryption, and compliance standards to protect your valuable data and assets.</p>
+                    <div class="why-features">
+                        <span><i class="fas fa-check"></i> End-to-End Encryption</span>
+                        <span><i class="fas fa-check"></i> GDPR Compliant</span>
+                        <span><i class="fas fa-check"></i> Regular Audits</span>
+                    </div>
+                </div>
+
+                <div class="why-card glass-card reveal-up" data-delay="200">
+                    <div class="why-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Scalability</h3>
+                    <p>Architectures designed to grow with your business, handling increased load without compromising performance.</p>
+                    <div class="why-features">
+                        <span><i class="fas fa-check"></i> Auto-Scaling</span>
+                        <span><i class="fas fa-check"></i> Load Balancing</span>
+                        <span><i class="fas fa-check"></i> Microservices</span>
+                    </div>
+                </div>
+
+                <div class="why-card glass-card reveal-up" data-delay="300">
+                    <div class="why-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Continuous research and development to bring you the latest technological advancements and competitive edge.</p>
+                    <div class="why-features">
+                        <span><i class="fas fa-check"></i> R&D Investment</span>
+                        <span><i class="fas fa-check"></i> Latest Tech Stack</span>
+                        <span><i class="fas fa-check"></i> Agile Methodology</span>
+                    </div>
+                </div>
+
+                <div class="why-card glass-card reveal-up" data-delay="400">
+                    <div class="why-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Performance</h3>
+                    <p>Optimized code, efficient algorithms, and best practices ensure lightning-fast applications and systems.</p>
+                    <div class="why-features">
+                        <span><i class="fas fa-check"></i> 99.9% Uptime</span>
+                        <span><i class="fas fa-check"></i> Fast Response Times</span>
+                        <span><i class="fas fa-check"></i> Optimized Database</span>
+                    </div>
+                </div>
+
+                <div class="why-card glass-card reveal-up" data-delay="500">
+                    <div class="why-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Reliability</h3>
+                    <p>24/7 support, proactive monitoring, and rapid response teams to ensure your systems run smoothly.</p>
+                    <div class="why-features">
+                        <span><i class="fas fa-check"></i> 24/7 Support</span>
+                        <span><i class="fas fa-check"></i> SLA Guarantees</span>
+                        <span><i class="fas fa-check"></i> Disaster Recovery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Portfolio Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge">Our Portfolio</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Showcasing our expertise through successful implementations</p>
+            </div>
+
+            <div class="project-filters reveal-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai">AI Solutions</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="cloud">Cloud</button>
+                <button class="filter-btn" data-filter="enterprise">Enterprise</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass-card reveal-up" data-category="ai" data-delay="100">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-details"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">AI Solutions</span>
+                        <h3>Intelligent Chatbot Platform</h3>
+                        <p>NLP-powered customer service chatbot with 95% accuracy rate</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card reveal-up" data-category="web" data-delay="200">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-details"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web Applications</span>
+                        <h3>E-Commerce Platform</h3>
+                        <p>Scalable online marketplace with 100K+ daily users</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card reveal-up" data-category="cloud" data-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-details"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Cloud Solutions</span>
+                        <h3>Cloud Migration Project</h3>
+                        <p>Enterprise infrastructure migration to AWS with zero downtime</p>
+                        <div class="project-tech">
+                            <span>AWS</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card reveal-up" data-category="enterprise" data-delay="400">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-details"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Enterprise Systems</span>
+                        <h3>ERP Implementation</h3>
+                        <p>Custom ERP system for manufacturing company with 500+ employees</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>PostgreSQL</span>
+                            <span>Microservices</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card reveal-up" data-category="ai" data-delay="500">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-network"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-details"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">AI Solutions</span>
+                        <h3>Predictive Analytics Engine</h3>
+                        <p>ML-based forecasting system for financial sector</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>scikit-learn</span>
+                            <span>Big Data</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card reveal-up" data-category="web" data-delay="600">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-details"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web Applications</span>
+                        <h3>Progressive Web App</h3>
+                        <p>Cross-platform PWA with offline capabilities</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>PWA</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team section" id="team">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge">Our Team</span>
+                <h2 class="section-title">Meet the <span class="gradient-text">Experts</span></h2>
+                <p class="section-subtitle">Talented professionals driving innovation at Walnex</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card glass-card reveal-up" data-delay="100">
+                    <div class="team-image">
+                        <div class="team-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Alexandra Chen</h3>
+                        <span class="team-role">CEO & Founder</span>
+                        <p>15+ years in tech leadership, former VP at Fortune 500 companies</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card glass-card reveal-up" data-delay="200">
+                    <div class="team-image">
+                        <div class="team-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Marcus Rodriguez</h3>
+                        <span class="team-role">CTO</span>
+                        <p>Expert in AI/ML architecture, PhD in Computer Science from MIT</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card glass-card reveal-up" data-delay="300">
+                    <div class="team-image">
+                        <div class="team-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Sarah Johnson</h3>
+                        <span class="team-role">Head of AI Research</span>
+                        <p>Published researcher in deep learning and neural networks</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card glass-card reveal-up" data-delay="400">
+                    <div class="team-image">
+                        <div class="team-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>David Kim</h3>
+                        <span class="team-role">Lead Developer</span>
+                        <p>Full-stack expert with 10+ years building enterprise systems</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge">Contact Us</span>
+                <h2 class="section-title">Let's Build Something <span class="gradient-text">Amazing</span></h2>
+                <p class="section-subtitle">Ready to transform your business? Get in touch today</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Us</h4>
+                            <p>123 Innovation Drive, Tech Valley<br>San Francisco, CA 94105</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>info@walnex.com<br>support@walnex.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form glass-card" id="contactForm">
+                        <h3>Send Message</h3>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="services">Our Services</option>
+                                <option value="projects">Project Discussion</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="support">Technical Support</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Message sent successfully! We'll get back to you soon.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">
+                            <i class="fas fa-cube"></i>
+                        </span>
+                        <span class="logo-text">WALNEX</span>
+                    </a>
+                    <p>Building the future with cutting-edge technology solutions. We empower businesses to thrive in the digital age through innovation and excellence.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">AI Solutions</a></li>
+                        <li><a href="#">Software Development</a></li>
+                        <li><a href="#">Web Applications</a></li>
+                        <li><a href="#">Cloud Solutions</a></li>
+                        <li><a href="#">Data Analytics</a></li>
+                        <li><a href="#">Enterprise Systems</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to stay updated with our latest news and insights</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Walnex Technologies. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
